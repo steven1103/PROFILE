@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.h1 {
+  position: relative;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	font-size: 3.4rem;
+	color: var(--inv);
+	letter-spacing: 1.1rem;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+  user-select: none;
+  font-weight: 100;
+}
+.btn {		
+	position: relative;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	font-size: 2.4rem;
+	color: var(--inv);
+	letter-spacing: 1.1rem;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+  user-select: none;
+  background-color : white;
+  color : black;
+  border-radius: 60px;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn:hover {
+	color:grey;
+  transition-delay: .5s;
+  font-size: 20;
+  transform : translateY(-10px)
+}
+
+.btn:hover:before {
+	position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:grey;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  border-radius: 60px;
+}
+
+.btn:hover:after {
+	background: var(--inv);
+	transition-delay: .35s;
+}
+
+.history {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+.javascript {
+  position: relative;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	font-size: 3.4rem;
+	color: var(--inv);
+	letter-spacing: 1.1rem;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+  user-select: none;
+  font-weight: 100;
+  color :#323330;
+  background-color: #F0DB4F;
+  border-radius: 50px;
+}
+.javascript:hover {
+  transform: translateY(-8px);
+}
+.python {
+  position: relative;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	font-size: 3.4rem;
+	color: var(--inv);
+	letter-spacing: 1.1rem;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+  user-select: none;
+  font-weight: 100;
+  color :#FFD43B;
+  background-color: #306998;
+  border-radius: 50px;
+}
+.python:hover {
+  transform: translateY(-8px);
+}
+.pythonScreen {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+.Skillimage {
+  height: 300;
+}
+.Skillimage:hover {
+  transform: translateY(-10px);
+}
